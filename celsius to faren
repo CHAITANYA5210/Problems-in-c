@@ -1,0 +1,8 @@
+main()
+{
+float celsius, faren;
+printf("What is the temperature in celsius?\n");
+scanf("%f",&celsius);
+faren = (1.8*celsius)+32;
+printf("the temperature in faren is  %f",faren);
+}
