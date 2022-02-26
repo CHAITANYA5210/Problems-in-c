@@ -1,0 +1,14 @@
+main()
+{
+    char Character;
+    printf("Tell  me a character\n");
+    scanf("%c",&Character);
+    if(Character=='a'|| Character=='e'|| Character=='i'||Character=='o'||Character=='u')
+    { 
+    printf("Given character is vowel ");
+    }
+    else
+    {
+        printf("Given character is consonent");
+    }
+}
