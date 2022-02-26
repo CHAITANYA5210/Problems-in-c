@@ -1,0 +1,10 @@
+main()
+{
+    int Length,Breadth,Area;
+    printf("What is length of the rectangle\n");
+    scanf("%d",&Length);
+    printf("What is breadth of the rectangle\n");
+    scanf("%d",&Breadth);
+    Area = Length*Breadth;
+    printf("%d is the area",Area);
+}
