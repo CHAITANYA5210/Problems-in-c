@@ -1,0 +1,8 @@
+main ()
+{
+    char Symbol;
+    printf("Tell me any symbol\n");
+    scanf("%c",&Symbol);
+    printf("the ascii value of %c is %d",Symbol,Symbol);
+    
+}
