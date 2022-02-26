@@ -1,0 +1,16 @@
+main()
+{
+int Number;
+printf("Give me a number i will tell weather it is ood or even\n");
+    scanf("%d",&Number);
+    
+        if(Number%2==0) 
+        {
+            printf("the number is even");
+        }
+        else
+        {
+             printf("The number is odd");
+        }
+    
+}
