@@ -1,0 +1,14 @@
+main()
+{
+    int year;
+    printf("Tell me the year number\n");
+    scanf("%d",&year);
+    if(year%4==0)
+    {
+        printf("The year is leap year");
+    }
+    else
+    {
+        printf("The year you gave iss not a leap year");
+    }
+}
