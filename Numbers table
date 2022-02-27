@@ -1,0 +1,13 @@
+main()
+{
+ int number,Times,i,Answer;
+ printf("Which table do you want\n");
+ scanf("%d",&number);
+ printf("How many times do you want table\n");
+ scanf("%d",&Times);
+ for(i=1;i<=Times;i++)
+ {
+     Answer = number*i;
+     printf("%d times of %d = %d\n ",number,i,Answer);
+ }
+}
