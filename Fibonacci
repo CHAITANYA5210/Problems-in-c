@@ -1,0 +1,19 @@
+int main()
+{
+   int number,Temp1,Temp2,MainTemp;
+   printf("What is the number\n");
+   scanf("%d",&number);
+   Temp1 = 0;
+   Temp2 = 1;
+   printf("number is %d\n",Temp1);
+   while(number-1>0)
+   {
+       MainTemp = Temp1;
+       Temp1 = Temp1+Temp2;
+       printf(" number is %d\n",Temp1);
+       Temp2 = MainTemp;
+       number = number-1;
+       
+   }
+    
+}
