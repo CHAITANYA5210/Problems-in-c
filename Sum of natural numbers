@@ -1,0 +1,14 @@
+main()
+{
+    int number,Temp;
+    printf("Tell me the number i will tell the sum\n");
+    scanf("%d",&number);
+    Temp = number;
+    do
+    {
+        Temp = Temp-1;
+        number = number+Temp;
+    }while(Temp>0);
+    printf("the sum is %d",number);
+    
+}
