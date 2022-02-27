@@ -1,0 +1,17 @@
+main()
+{
+    int number,power,Temp,Temp2,MainTemp;
+    printf("what is the number\n");
+    scanf("%d",&number);
+    printf("What is the power\n");
+    scanf("%d",&power);
+    MainTemp = number;
+    Temp2 = power;
+    while(power>1)
+    {
+        number = number*number;
+        power = power-1;
+    }
+    Temp = number;
+    printf("%d power of %d is %d",MainTemp,Temp2,Temp);
+}
