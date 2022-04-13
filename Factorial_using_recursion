@@ -1,0 +1,23 @@
+#include <stdio.h>
+int factorial(int number,int temp)
+{
+    if(temp>1)
+    {
+        temp=temp-1;
+        number=number*temp;
+        factorial( number, temp);
+    }
+    else
+    {
+        return number;
+    }
+}
+int main()
+{
+    int number,temp;
+    printf("what is the number\n");
+    scanf("%d",&number);
+    temp=number;
+    printf("factorial is %d",factorial( number, temp));
+    
+}
