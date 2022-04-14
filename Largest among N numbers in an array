@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int total,temp;
+    printf("How many numberss are there in the array\n");
+    scanf("%d",&total);
+    int myarray[total];
+    for(int i=0;i<total;i++)
+    {
+        printf("what is the number\n");
+        scanf("%d",&myarray[i]);
+    }
+    temp=myarray[0];
+    for(int i=0;i<total;i++)
+    {
+    if(myarray[i]>=temp)
+    {
+        temp=myarray[i];
+    }
+    }
+    printf("largest number is %d",temp);
+}
