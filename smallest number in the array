@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int total,temp;
+    printf("how many elements are there in the array\n");
+    scanf("%d",&total);
+    int myarray[total];
+    for(int i=0;i<total;i++)
+    {
+        printf("what is the element\n");
+        scanf("%d",&myarray[i]);
+    }
+    temp=myarray[0];
+     for(int i=0;i<total;i++)
+    {
+       if(temp>myarray[i])
+         {
+            temp=myarray[i];
+        }
+    }
+    printf("smallest element in the array is %d",temp);
+
+}
