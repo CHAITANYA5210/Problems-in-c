@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char letter[20];
+    int count=0;
+    printf("what is the letter\n");
+    scanf("%s",letter);
+    for(int i=0;letter[i]!='\0';i++)
+    {
+        count=count+1;
+    }
+    printf("%d",count);
+}
