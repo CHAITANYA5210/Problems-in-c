@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int total,num;
+    printf("how many elements are there\n");
+    scanf("%d",&total);
+    int array[total];
+    for(int i=0;total>i;i++)
+    {
+        printf("what is the %d number  ",i+1);
+        scanf("%d",&array[i]);
+    }
+    printf("what is the element  \n");
+    scanf("%d",&num);
+    int temp=0;
+    for(int i=0;total>i;i++)
+    {
+        if(array[i]==num)
+        {
+            printf("the number is found at inder %d",i);
+            temp=1;
+        }
+    }
+    if(temp==0)
+    {
+        printf("the number is not there\n");
+    }
+}
