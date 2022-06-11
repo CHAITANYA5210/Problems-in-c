@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char name[20];
+    printf("what is the name\n");
+    scanf("%s",name);
+    int length=strlen(name);
+    int temp=0;
+    for(int i=0;length>i;i++)
+    {
+        temp=temp+name[i];
+    }
+    printf("total length is %d",temp);
+}
