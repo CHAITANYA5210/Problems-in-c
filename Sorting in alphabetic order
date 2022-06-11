@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char word[20];
+    printf("what is the word\n");
+    scanf("%s",word);
+    int length=strlen(word);
+    char temp;
+    for(int i=0;length>i;i++)
+    {
+        for(int j=i+1;length>j;j++)
+        {
+            if(word[i]>word[j])
+            {
+                temp=word[j];
+                word[j]=word[i];
+                word[i]=temp;
+            }
+            
+        }
+    }
+    printf(" alfhabetic order is %s",word);
+}
