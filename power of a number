@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int num,power;
+    printf("what is the number\n");
+    scanf("%d",&num);
+    printf("what is the power\n");
+    scanf("%d",&power);
+    int temp=num;
+    while(power>1)
+    {
+        num=num*temp;
+        power=power-1;
+    }
+    printf("%d is the number",num);
+}
