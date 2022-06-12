@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main()
+{
+    int total,deletion,position,times;
+    printf("how many elements are there in the array\n");
+    scanf("%d",&total);
+    int array[total];
+    for(int i=0;total>i;i++)
+    {
+        printf("what is the element\n");
+        scanf("%d",&array[i]);
+    }
+    printf("current array is: \n");
+    for(int i=0;total>i;i++){
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+    printf("which element would you like to delete\n");
+    scanf("%d",&deletion);
+    for(int i=0;total>i;i++)
+    {
+        if(array[i]==deletion){
+            position=i;
+        }
+    }
+    times=total-(position+1);
+    for(int i=position;total>position;i++)
+    {
+        array[i]=array[i+1];
+        position=position+1;
+    }
+    
+    
+    
+    printf("New array positions are \n");
+    for(int i=0;total-1>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+    
+}
