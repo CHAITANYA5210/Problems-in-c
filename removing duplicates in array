@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+    int total,count;
+    printf("how many elements are there\n");
+    scanf("%d",&total);
+    int array[total];
+    count=0;
+    for(int i=0;total>i;i++)
+    {
+        printf("what is the element\n");
+        scanf("%d",&array[i]);
+    }
+    printf("Current array: \n");
+    for(int i=0;total>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+    
+    for(int i=0;total>i;i++)
+    {
+        for(int j=i+1;total>j;j++)
+        {
+            if(array[i]==array[j] && array[j]!=0)
+            {
+                array[j]=0;
+                count=count+1;
+            }
+        }
+    }
+    for(int i=0;total>i;i++)
+    {
+        if(array[i]==0)
+        {
+            for(int j=i;total>j;j++)
+                {
+                    array[j]=array[j+1];
+                }
+        }
+    }
+    printf("New array is: \n");
+    for(int i=0;total-count>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+}
