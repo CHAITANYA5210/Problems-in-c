@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+    int total,position,temp,element;
+    printf("how many elements are there\n");
+    scanf("%d",&total);
+    int array[total];
+    for(int i=0;total-1>i;i++)
+    {
+        printf("what is the element\n");
+        scanf("%d",&array[i]);
+    }
+    printf("current elements are: \n");
+    for(int i=0;total-1>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+    printf("what is the position you want to add the new element\n");
+    scanf("%d",&position);
+    position=position-1;
+    printf("what is the element you want to add\n");
+    scanf("%d",&element);
+    for(int i=total-1;i>position;i--)
+    {
+        array[i]=array[i-1];
+    }
+    array[position]=element;
+    printf("final elements are: \n");
+    for(int i=0;total>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+}
