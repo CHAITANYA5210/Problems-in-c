@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int total,temp;
+    printf("How many elements are there\n");
+    scanf("%d",&total);
+    int array[total];
+    for(int i=0;total>i;i++)
+    {
+        printf("what is the element\n");
+        scanf("%d",&array[i]);
+    }
+    printf("Current array is: \n");
+    for(int i=0;total>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+    for(int i=0,j=total-1;total/2>i;i++,j--)
+    {
+        temp=array[i];
+        array[i]=array[j];
+        array[j]=temp;
+    }
+    printf("New array is: \n");
+    for(int i=0;total>i;i++)
+    {
+        printf("Array[%d]=%d\n",i,array[i]);
+    }
+}
