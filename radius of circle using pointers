@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int r;
+    int *p;
+    int area;
+    int *a;
+    printf("what is the radius\n");
+    scanf("%d",&r);
+    p=&r;
+    area=3.14*((*p)*(*p));
+    a=&area;
+    printf("area of a circle is %d",*a);
+}
